@@ -1,2 +1,6 @@
 # Ignore data files
 zippedData/*.*
+
+# Ignore checkpoint folder
+.ipynb_checkpoints/*.*
+

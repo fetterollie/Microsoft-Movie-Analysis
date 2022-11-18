@@ -56,18 +56,18 @@ We then compared the median ROI of each budget groups to determine which budget 
 * Over the 2010s, the **Animation** genre had the highest average yearly profit. ($313 MM per year)
 * **Family** films, a related genre, was the second-highest profitable genre of the 2010s ($292 MM per year).
 
-==insert graph #1 here==
+![averageprofitbygenre](./images/figure1)
 
 ### Question 2: 
 * High budget films provide the strongest ROI, with the typical high-budget film yielding a 200% ROI
 
- ==insert graph #2 here==
+![budgetROI](./images/figure2)
 
 ### Question 3: 
 * Out of all of the highest rated movies (ratings > 8.0), there were more movies in the 85 - 100 minute range than any other movie length.  
 * This would indicate a viewer preference for movies with this length.
 
-==insert graph #3 here==
+![highratedmovieruntimes](./images/figure3)
 
 ## Conclusions
 

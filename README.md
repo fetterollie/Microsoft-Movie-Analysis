@@ -4,22 +4,28 @@
 
 **Authors**: [Jonathan Fetterolf](mailto:jonathan.fetterolf@gmail.com), [Matthew Duncan](mailto:mduncan0923@gmail.com), [Nate Kist](mailto:natekist@outlook.com), & [Roshni Janakiraman](mailto:roshnij618@gmail.com)
 
+## Instructions
+
+NOTE: In order to run this notebook, you will need to download the necessary data file. A zipped version of the file can be downloaded: [here](https://github.com/fetterollie/Microsoft-Movie-Analysis/raw/main/zippedData/im.db.zip).
+
+Please refer to the *"Importing IMDB Data"* section of our [Jupyter Notebook](./Movie_industry_analysis_notebook.ipynb) for more detailed instructions on unzipping and using the data.
+
 ## Overview
 
-This project analyzes multiple film databases to determine what factors make a movie successful. Descriptive analyses of movie characteristics and box office data show that high budget films provide the strongest return on investment (ROI), Animation is the movie genre with the highest profit, and the highest-rated films tend to be 85 - 100 minutes long. Microsoft can use this analysis to invest in the types of movies that are more likely to succeed.
-
-## Business Problem
+We analyzed multiple film databases to determine what factors make a movie successful. Descriptive analyses of movie characteristics and box office data show that Animation is the most profitable movie genre, high budget films provide the strongest return on investment (ROI), and the highest-rated films tend to be 85 - 100 minutes long.
 
 ![action](./images/director_shot.jpeg)
 
+## Business Problem
+
 Microsoft may be able to improve their likelihood of producing box office successes by investing in films with similar characteristics to recent successful releases. The following questions guided our analyses:
-    1. What genre of movie is most profitable?
-    2. What type of budget should we plan for this movie?
-    3. What is the movie's expected runtime?
+ 1. What genre of movie is most profitable?
+ 2. What type of budget should be allocated for this movie?
+ 3. What is the movie's expected runtime?
 
 ## Data
 
-Data for this analysis is taken from three of the largest online movie databases, described in detail below.
+Data for this analysis is from three online movie databases.
 
 ### 1. The MovieDB (TMDB)
 
@@ -42,9 +48,9 @@ For all tables, we removed unnecessary columns, cleaned, and filtered all of the
 **Question 1**: We merged TN with TMDB to address Question #1. TMDB uses 18 primary genres to classify the movies in their database. We used a bar chart to examine the average net profit of each genre of movie, and limited our findings to the top 10 most profitable genres.
 
 **Question 2**: Using the TN dataset, we calculated two new variables of interest: Net Profit and Return on Investment (ROI). The main analysis used a bar chart to compare the median ROI of films based on production budget. Based on definitions used by [Hollywood market researchers](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3751648), we grouped our data into 3 budget categories:
-    1. Low (less than $20 MM)
-    2. Medium ($20 MM - $100 MM)
-    3. High (greater than $100 MM)
+1. Low (less than $20 MM)
+2. Medium ($20 MM - $100 MM)
+3. High (greater than $100 MM)
 
 We then compared the median ROI of each budget groups to determine which budget group provided the best value for its cost. We used the median ROI because there are extreme outliers in each budget group that might misrepresent how a 'typical' movie would fare.
 
@@ -100,7 +106,7 @@ Further analyses could yield additional insights to improve recommendations for 
 
 ## For More Information
 
-See the full analysis in the [Jupyter Notebook](./==finalnamehere== ) or review this [presentation ](./ ==finalnamehere==).
+See the full analysis in the [Jupyter Notebook](./Movie_industry_analysis_notebook.ipynb) or review this [presentation](./presentation.pdf).
 
 **For additional info, contact:**
 - Jonathan Fetterolf: jonathan.fetterolf@gmail.com
@@ -108,17 +114,17 @@ See the full analysis in the [Jupyter Notebook](./==finalnamehere== ) or review 
 - Nate Kist: natekist@outlook.com
 - Roshni Janakiraman: roshnij618@gmail.com
 
-==pic here==
+![cinema](./images/cinema.png)
 
 ## Repository Structure
 
 ```
 ├── Scratch_Notebooks
-│   ├── Matt-prelim.ipynb
-│   ├── Nate-prelim.ipynb
+│   ├── matt-prelim.ipynb
+│   ├── nate-prelim.ipynb
 │   ├── joining-df.ipynb
-│   ├── Jon-prelim.ipynb
-│   └── Roshni-prelim.ipynb
+│   ├── jon-prelim.ipynb
+│   └── roshni-prelim.ipynb
 ├── images
 │   ├── director_shot.jpeg
 │   ├── figure1.png
@@ -132,6 +138,7 @@ See the full analysis in the [Jupyter Notebook](./==finalnamehere== ) or review 
 │   ├── rt.reviews.tsv.gz
 │   ├── tmdb.movies.csv.gz
 │   └── tn.movie_budgets.csv.gz
-├── README.md
-└── == notebook name ==.ipynb
+├── Movie_industry_analysis_notebook.ipynb
+├── presentation.pdf
+└── README.md
 ```

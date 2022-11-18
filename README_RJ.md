@@ -1,18 +1,18 @@
 ![austin animal center](./images/austin-animal-center.jpg)
 
-# Austin Animal Center Needs Analysis
+# Microsoft Movie Analysis
 
-**Author**: [Alison Peebles Madigan](mailto:alison.peeblesmadigan@flatironschool.com)
+**Authors**: [Jonathan Fetterolf](mailto:) [Matthew Duncan](mailto:) [Nate Kist](mailto:) [Roshni Janakiraman](mailto:)
 
 ## Overview
 
-This project analyzes the resource needs of the [Austin Animal Center](https://www.austintexas.gov/department/aac) (AAC), which shelters 16,000 animals annually with a [No Kill policy](https://www.austintexas.gov/blog/no-kill-austin). Descriptive analysis of animal intake and outcome data shows that some animals require extended stays and that the number of sheltered animals varies seasonally. The Austin Animal Center can use this analysis to adjust outreach, hiring, and space utilization to improve resource allocation.
+This project analyzes multiple film databases to determine what factors make a movie successful. Descriptive analyses of movie characteristics and box office data show that high budget films provide the strongest return on investment (ROI), Animation is the movie genre with the highest profit, and the highest-rated films tend to be 85-110 minutes long. Microsoft can use this analysis to invest in the types of movies that are more likely to become successful.
 
 ## Business Problem
 
-![img](./images/animals.png)
+![img](./images)
 
-The Austin Animal Shelter may be able to improve their resource allocation to both reduce costs and ensure that the center has staff and space to care for the animals brought to them. Doing so will allow the Austin Animal Shelter to better serve its clients while also freeing up resources to expand the scope of services they can offer.
+Over the past decade, many promising film studios dissolved in their infancy, because they struggled to stand out in the marketplace. For an entrant to succeed in the film industry, producing successful films is critical to building brand recognition. Microsoft may be able to improve their likelihood of producing box office successes by prioritizing the funding of movies with certain characteristics.
 
 ## Data
 

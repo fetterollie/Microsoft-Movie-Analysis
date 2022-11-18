@@ -2,7 +2,7 @@
 
 # Microsoft Movie Analysis
 
-**Authors**: [Jonathan Fetterolf](mailto:jonathan.fetterolf@gmail.com), [Matthew Duncan](mailto:mduncan0923@gmail.com), [Nate Kist](mailto:natekist@outlook.com), & [Roshni Janakiraman](mailto:roshnij618@gmail.com)
+**Authors**: [Jonathan Fetterolf](mailto:jonathan.fetterolf@gmail.com), [Matthew Duncan](mailto:mduncan0923@gmail.com), [Nate Kist](mailto:natekist@outlook.com), & [Roshni Janakiraman](mailto:roshnij618@gmail.com)$
 
 ## Instructions
 
@@ -20,8 +20,8 @@ We analyzed multiple film databases to determine what factors make a movie succe
 
 Microsoft may be able to improve their likelihood of producing box office successes by investing in films with similar characteristics to recent successful releases. The following questions guided our analyses:
  1. What genre of movie is most profitable?
- 2. What type of budget should be allocated for this movie?
- 3. What is the movie's expected runtime?
+ 2. What type of budget should be allocated for production?
+ 3. What is the ideal expected runtime for movies?
 
 ## Data
 

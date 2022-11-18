@@ -2,13 +2,7 @@
 
 # Microsoft Movie Analysis
 
-**Authors**: [Jonathan Fetterolf](mailto:jonathan.fetterolf@gmail.com), [Matthew Duncan](mailto:mduncan0923@gmail.com), [Nate Kist](mailto:natekist@outlook.com), & [Roshni Janakiraman](mailto:roshnij618@gmail.com)$
-
-## Instructions
-
-NOTE: In order to run this notebook, you will need to download the necessary data file. A zipped version of the file can be downloaded: [here](https://github.com/fetterollie/Microsoft-Movie-Analysis/raw/main/zippedData/im.db.zip).
-
-Please refer to the *"Importing IMDB Data"* section of our [Jupyter Notebook](./Movie_industry_analysis_notebook.ipynb) for more detailed instructions on unzipping and using the data.
+**Authors**: [Jonathan Fetterolf](mailto:jonathan.fetterolf@gmail.com), [Matthew Duncan](mailto:mduncan0923@gmail.com), [Nate Kist](mailto:natekist@outlook.com), & [Roshni Janakiraman](mailto:roshnij618@gmail.com)
 
 ## Overview
 
@@ -21,7 +15,7 @@ We analyzed multiple film databases to determine what factors make a movie succe
 Microsoft may be able to improve their likelihood of producing box office successes by investing in films with similar characteristics to recent successful releases. The following questions guided our analyses:
  1. What genre of movie is most profitable?
  2. What type of budget should be allocated for production?
- 3. What is the ideal expected runtime for movies?
+ 3. What is the ideal movie length?
 
 ## Data
 
@@ -126,6 +120,7 @@ See the full analysis in the [Jupyter Notebook](./Movie_industry_analysis_notebo
 │   ├── jon-prelim.ipynb
 │   └── roshni-prelim.ipynb
 ├── images
+│   ├── cinema.jpeg
 │   ├── director_shot.jpeg
 │   ├── figure1.png
 │   ├── figure2.png

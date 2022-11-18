@@ -114,8 +114,6 @@ See the full analysis in the [Jupyter Notebook](./Movie_industry_analysis_notebo
 - Nate Kist: natekist@outlook.com
 - Roshni Janakiraman: roshnij618@gmail.com
 
-![cinema](./images/cinema.jpg)
-
 ## Repository Structure
 
 ```

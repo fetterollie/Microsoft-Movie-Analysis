@@ -73,8 +73,8 @@ We then compared the median ROI of each budget groups to determine which budget 
 
 This analysis leads to three recommendations for Microsoft's entry in the film industry:
 
-1. **Produce movies within the 'animated' or 'family' genres to maximize net profit** 
-    - Movies with the primary genres of 'animated' and ‘family’ have the highest average yearly net profits over the 2010s.
+1. **Produce movies within the Animation and Family genres to maximize net profit** 
+    - Animation and Family movies have had the highest average yearly net profits over the 2010s.
 2. **Invest in high-budget films** 
     - High-budget films have the greatest potential for maximum returns
     - Microsoft should plan to invest at least **$200 MM** per film

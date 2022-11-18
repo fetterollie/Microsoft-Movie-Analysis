@@ -1,4 +1,4 @@
-![austin animal center](./images/austin-animal-center.jpg)
+![austin animal center](./images/==jonathan's design here? or filmy pic?==.jpg)
 
 # Microsoft Movie Analysis
 
@@ -6,39 +6,70 @@
 
 ## Overview
 
-This project analyzes multiple film databases to determine what factors make a movie successful. Descriptive analyses of movie characteristics and box office data show that high budget films provide the strongest return on investment (ROI), Animation is the movie genre with the highest profit, and the highest-rated films tend to be 85-110 minutes long. Microsoft can use this analysis to invest in the types of movies that are more likely to become successful.
+This project analyzes multiple film databases to determine what factors make a movie successful. Descriptive analyses of movie characteristics and box office data show that high budget films provide the strongest return on investment (ROI), Animation is the movie genre with the highest profit, and the highest-rated films tend to be 85 - 100 minutes long. Microsoft can use this analysis to invest in the types of movies that are more likely to become successful.
 
 ## Business Problem
 
-![img](./images)
+![img]==insert film pic here==(./images)
 
-Over the past decade, many promising film studios dissolved in their infancy, because they struggled to stand out in the marketplace. For an entrant to succeed in the film industry, producing successful films is critical to building brand recognition. Microsoft may be able to improve their likelihood of producing box office successes by prioritizing the funding of movies with certain characteristics.
+Microsoft may be able to improve their likelihood of producing box office successes by investing in films with similar characteristics to recent successful releases. The following questions guided our analyses:
+    1. What genre of movie is most profitable?
+    2. What type of budget should we plan for this movie?
+    3. What is the movie's expected runtime?
 
 ## Data
 
-The Austin Animal Center has the longest running public dataset of animal rescues in the country. Every animal has a unique ID associated with both their [intake](https://data.austintexas.gov/Health-and-Community-Services/Austin-Animal-Center-Intakes/wter-evkm) and [outcome](https://data.austintexas.gov/Health-and-Community-Services/Austin-Animal-Center-Outcomes/9t4d-g238) data. The data files provide the dates and types of each event, as well as other animal characteristics (e.g. type, sex).
+Data for this analysis is taken from three of the largest online movie databases, described in detail below.
+
+### 1. The MovieDB (TMDB)
+
+[TMDB](https://www.themoviedb.org/?language=en-US)is a user-built database of movie information and user ratings. The current dataset includes 26,517 datapoints and 9 columns of data. The target data includes release date and genre, where the genre codes are ordered by relevance.
+
+### 2. The Numbers (TN)
+
+[TN](url) dataset consists of box office information across 5,782 movies. The target data includes release date, production budget and worldwide gross revenue.
+
+### 3. Internet Movie Database (IMDB)
+
+[IMDb](url) is an online database consisting of movie information, statistics, and user ratings. The IMDB dataset is comprised of multiple tables. For the current analysis, we used two tables consisting of basic movie data and user ratings for movies. The target data includes release date, runtime length (in minutes), and average rating.
 
 ## Methods
 
-This project uses descriptive analysis, including description of trends over time. This provides a useful overview of AAC's typical intakes and outcomes to identify resource needs.
+This project uses descriptive analytics to describe trends in the features of successful movies. 
+
+For all tables, we removed unnecessary columns, cleaned, and filtered all of the tables used. To make sure that the data we used was relevant to Microsoft's business question, we limited the data to only include movies released between 2010 - 2019 and English movies. All numerical columns were scaled to be in millions (MM). 
+
+We merged TN with TMDB to address Question #1. TMDB uses 18 primary genres to classify the movies in their database. We used a bar chart to examine the average net profit of each genre of movie, and limited our findings to the top 10 most profitable genres.
+
+Using the TN dataset, to answer question #2, we calculated two new variables of interest: Net Profit and Return on Investment (ROI). The main analysis used a bar chart to compare the median ROI of films based on production budget. Based on definitions used by [Hollywood market researchers](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3751648), we grouped our data into 3 budget categories:
+1. Low (less than $20 MM)
+2. Medium ($20 MM - $100 MM)
+3. High (greater than $100 MM)\
+
+We then compared the median ROI of each budget groups to determine which budget group provided the best value for its cost. We used the median ROI because there are extreme outliers in each budget group that might misrepresent how a 'typical' movie would fare. The median tells us the ROI for a 'typical' movie across budget groups.
+
+To address Question #3, we used the IMDB dataset. Since the IMDB dataset had over 35,000 datapoints, even after applying our filter criteria, we decided to further refine our question: *of the highest rated films on IMDB, what is the most common movie length?* We then narrowed down the dataset to include only the highest rated movies (average user rating of 8.0 or greater) on IMDB. 
 
 ## Results
 
-Most animals have short stays at AAC (under 15 days) but some have long stays (over 180 days), and most of these are dogs.
+### Question 1: What genre of movie is most profitable? ###
+* Over the 2010s, the **Animation** genre had the highest average yearly profit. ($313 MM per year)
+* **Family** films, a related genre, was the second-highest profitable genre of the 2010s ($292 MM per year).
 
-![stay_lengths_by_type](./images/stay_lengths_by_type.png)
+### Question 2: 
+* High budget films provide the strongest ROI, with the typical high-budget film yielding a 200% ROI
 
-The total number of sheltered animals typically peaks in May of each year and then hits its lowest point around January. There is often a secondary peak sometime after May before the number of sheltered animals drops rapidly. The number of sheltered animals has dropped precipitously in 2020, likely as a result of COVID-19.
-
-![sheltered_by_month.png](./images/sheltered_by_month.png)
+### Question 3: 
+* Out of all of the highest rated movies (ratings > 8.0), there were more movies in the 85 - 100 minute range than any other movie length.  
+* This would indicate a viewer preference for movies with this length.
 
 ## Conclusions
 
 This analysis leads to three recommendations for improving operations of the Austin Animal Center:
 
-- **Engage in targeted outreach campaigns for dogs that have been sheltered at AAC for more than 30 days.** While most dogs will have been placed after 30 days, this may help reduce the number of dogs that end up having extended stays, potentially requiring many more months of care.
-- **Reduce current spending until the numbers of intakes and sheltered animals return to normal.** Given the reduced activity during this period, AAC should consider ways to temporarily reduce costs by changing space utilization or staffing.
-- **Hire seasonal staff and rent temporary space for May through December.** To accommodate the high volume of intakes and number of sheltered animals in the spring and fall, AAC should leverage seasonal resources, rather than full-year ones. This will allow AAC to cut back on expenditures during the months when there is lower
+- **1. Produce movies within the 'animated' or 'family' genres to maximize net profit.** Movies with the primary genres of 'animated' and ‘family’ have the highest average yearly net profits over the 2010s.
+- **2. Produce high-budget films: Microsoft should plan to invest at least 200 MM per film** High-budget films have the greatest potential for maximum returns, with the typical high-budget film yielding returns worth 200% more than the initial investment. 
+- **3. Hire seasonal staff and rent temporary space for May through December.** To accommodate the high volume of intakes and number of sheltered animals in the spring and fall, AAC should leverage seasonal resources, rather than full-year ones. This will allow AAC to cut back on expenditures during the months when there is lower
 
 ### Next Steps
 
